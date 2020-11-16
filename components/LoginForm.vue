@@ -1,18 +1,37 @@
 <template>
   <v-form ref="form">
-    <v-row class="mx-auto">
+    <v-row>
       <span class="title-text"> ユーザー名 </span>
       <v-text-field
         placeholder="メールアドレスを入力してください"
         class="input-text"
       />
     </v-row>
-    <v-row class="mx-auto">
+    <v-row>
       <span class="title-text"> パスワード </span>
       <v-text-field class="input-text" />
     </v-row>
     <v-card-actions>
-      <v-btn :width="200">ログイン</v-btn>
+      <v-btn :width="200" class="login-btn">ログイン</v-btn>
     </v-card-actions>
   </v-form>
 </template>
+<style lang="scss" scoped>
+.input-text {
+  display: inline-block;
+}
+.title-text {
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-right: 16px;
+}
+.row {
+  width: 500px;
+  padding-left: 16px;
+  margin: 0 auto;
+}
+.login-btn {
+  margin: 20px auto 0;
+}
+</style>
