@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <Message />
-    <button>ログイン</button>
-  </div>
+  <v-container>
+    <LoginCard />
+  </v-container>
 </template>
