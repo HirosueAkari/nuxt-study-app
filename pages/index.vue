@@ -27,9 +27,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-@Component({
-  middleware: 'middleware',
-})
+@Component
 export default class index extends Vue {}
 </script>
 
