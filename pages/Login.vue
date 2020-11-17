@@ -1,10 +1,14 @@
 <template>
   <v-container>
-    <LoginCard />
+    <LoginCard @emitLogin="login" />
   </v-container>
 </template>
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
+import { Component, Vue } from 'nuxt-property-decorator'
+@Component
+export default class Login extends Vue {
+  login() {
+    alert('1')
+  }
+}
 </script>

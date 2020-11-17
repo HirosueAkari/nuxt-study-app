@@ -12,10 +12,18 @@
       <v-text-field class="input-text" />
     </v-row>
     <v-card-actions>
-      <v-btn :width="200" class="login-btn">ログイン</v-btn>
+      <v-btn :width="200" class="login-btn" @click="login">ログイン</v-btn>
     </v-card-actions>
   </v-form>
 </template>
+<script lang="ts">
+import { Vue, Component, Emit } from 'nuxt-property-decorator'
+@Component
+export default class LoginForm extends Vue {
+  @Emit('emitLogin')
+  login() {}
+}
+</script>
 <style lang="scss" scoped>
 .input-text {
   display: inline-block;
