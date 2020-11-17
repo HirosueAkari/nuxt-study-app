@@ -5,10 +5,12 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-@Component
+@Component({
+  middleware: 'middleware',
+})
 export default class Login extends Vue {
   login() {
-    alert('1')
+    this.$router.push('/home')
   }
 }
 </script>
