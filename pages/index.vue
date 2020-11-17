@@ -26,9 +26,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
+import { Component, Vue } from 'nuxt-property-decorator'
+@Component({
+  middleware: 'middleware',
+})
+export default class index extends Vue {}
 </script>
 
 <style>
